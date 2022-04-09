@@ -7,11 +7,15 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+                "${workspaceFolder}/src/Play.Common/Play.Common.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "publish",
@@ -19,7 +23,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+                "${workspaceFolder}/src/Play.Common/Play.Common.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +37,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/src/Play.Catalog.Service/Play.Catalog.Service.csproj"
+                "${workspaceFolder}/src/Play.Common/Play.Common.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
